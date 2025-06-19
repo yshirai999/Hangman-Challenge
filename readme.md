@@ -21,7 +21,7 @@ pip install -r requirements.txt
 
 Below is the general structure of this folder, showing the most relevant files contained in it for my submission.
 
-hangman_project/
+```bash
 /TrexquantHangmanProject
 │
 ├── README.md
@@ -82,6 +82,7 @@ hangman_project/
     ├── environment.yml
     ├── config.yaml
     ├── all_other_pickle_dumps.pkl
+```
 
 ## Dictionary Split and Sample Generation
 
