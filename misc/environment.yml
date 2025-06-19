@@ -1,0 +1,16 @@
+
+name: hangman-bot
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - nltk
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - jupyter
+  - pip
+  - pip:
+      - tqdm

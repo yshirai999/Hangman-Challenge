@@ -1,0 +1,14 @@
+# config.yaml
+
+agent_mode: Hybrid_SB_Transformer
+      # Options:
+        # "ML",
+        # "Frequency",
+        # "Entropy",
+        # "Logical",
+        # "Subpattern_Greedy",
+        # "Hybrid_nonML",
+        # "Hybrid_ML",
+        # "Hybrid_SB_Transformer",
+        # "Hybrid_SB_Transformer_V2",
+        # "Transformer"
