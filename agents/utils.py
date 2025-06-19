@@ -334,8 +334,8 @@ def get_or_create_ordered_dictionary(dictionary, cache_path):
     return ordered_dictionary
 
 def get_or_create_cluster_data(dictionary, n_clusters = 50):
-    label_map_path = f"label_map_{n_clusters}.pkl"
-    summary_path = f"cluster_summary_by_label_{n_clusters}.pkl"
+    label_map_path = data_path(f"label_map_{n_clusters}.pkl")
+    summary_path = data_path(f"cluster_summary_by_label_{n_clusters}.pkl")
     if os.path.exists(label_map_path) and os.path.exists(summary_path):
         label_map = load_cache(label_map_path)
         cluster_summary_by_label = load_cache(summary_path)
