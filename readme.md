@@ -1,11 +1,10 @@
-# Hangman Trexquant Challenge
+# Hangman
 
-This repository contains my final submission for the Trexquant Hangman Agent Challenge. It includes multiple agents, training and evaluation pipelines, and a hybrid architecture combining affix-based heuristics with machine learning.
+This repository contains multiple agents, training and evaluation pipelines, and a hybrid architecture combining affix-based heuristics with machine learning to play the hangman gain on a dictionary of 50000 words (test set). The agents are trained on a similar by disjoint dictionary of 200000 words (training set).
 
 ## Final Result
 
-Submitted agent ("Subpattern_Greedy") achieved a 27.5% win rate on Trexquant’s test set.
-The final strategy integrated affix-aware subpattern matching, fallback logical reasoning, with affixes estimated on 80% of Trexquant training dictionary. Despite operating under constrained black-box conditions, the approach demonstrated significant gains over baseline frequency methods and exploratory agents.
+The agent "Subpattern_Greedy" achieved a 27.5% win rate on the test set. The final strategy integrated affix-aware subpattern matching, fallback logical reasoning, with affixes estimated on the training dictionary. Despite operating under constrained black-box conditions, the approach demonstrated significant gains over baseline frequency methods and exploratory agents.
 
 ## Setup
 
