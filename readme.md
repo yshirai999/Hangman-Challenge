@@ -2,6 +2,8 @@
 
 This repository contains multiple agents, training and evaluation pipelines, and a hybrid architecture combining affix-based heuristics with machine learning to play the hangman gain on a dictionary of 50000 words (test set). The agents are trained on a similar by disjoint dictionary of 200000 words (training set).
 
+Note: this challenge was originally inspired by a recruiting process and has been anonymized for general sharing.
+
 ## Final Result
 
 The agent "Subpattern_Greedy" achieved a 27.5% win rate on the test set. The final strategy integrated affix-aware subpattern matching, fallback logical reasoning, with affixes estimated on the training dictionary. Despite operating under constrained black-box conditions, the approach demonstrated significant gains over baseline frequency methods and exploratory agents.
@@ -21,7 +23,7 @@ pip install -r requirements.txt
 Below is the general structure of this folder, showing the most relevant files contained in it for my submission.
 
 ```bash
-/TrexquantHangmanProject
+/Hangman
 │
 ├── README.md
 ├── requirements.txt                 # Optional
@@ -295,4 +297,4 @@ A letter could then be selected based on frequency across these candidates
 
 ## Final Thoughts
 
-This project was a great opportunity to combine linguistic intuition with machine learning and symbolic heuristics. It reflects both analytical reasoning and creative exploration under time constraints. I'm grateful to the Trexquant team for the challenge, and I’m happy to discuss or expand on any part of this submission.
+This project was a great opportunity to combine linguistic intuition with machine learning and symbolic heuristics. It reflects both analytical reasoning and creative exploration under time constraints. I'm grateful to the Trexquant team for the challenge.
