@@ -142,38 +142,38 @@ agent.affix_data = affix_data_cons
 #######################################
 # Random Forest Model Data and Training
 #######################################
+if agent.mode in ["ML", "Hybrid_ML"]:
+    try:
+        agent.sample_data = load_cache(data_path(f"sample_data{agent.sample_data_size}.pkl"))
+        print(f"Loaded cached sample data: {len(agent.sample_data)} samples.")
+    except FileNotFoundError:
+        if agent.use_parallel_data_generation:
+            print("Run generate_data.py" \
+            " to generate training data in parallel.")
+            sys.exit(1)
+        else:
+            agent.data()
 
-try:
-    agent.sample_data = load_cache(data_path(f"sample_data{agent.sample_data_size}.pkl"))
-    print(f"Loaded cached sample data: {len(agent.sample_data)} samples.")
-except FileNotFoundError:
-    if agent.use_parallel_data_generation:
-        print("Run generate_data.py" \
-        " to generate training data in parallel.")  
-        sys.exit(1)      
-    else:
-        agent.data()
+    try:
+        agent.training_data = load_cache(
+                data_path(f"training_data{agent.sample_data_size}.pkl")
+            )
+        agent.validation_data = load_cache(
+                data_path(f"validation_data{agent.sample_data_size}.pkl")
+            )
+        agent.testing_data = load_cache(
+                data_path(f"testing_data{agent.sample_data_size}.pkl")
+            )
+    except FileNotFoundError:
+            agent.split_and_save_data(agent.sample)
 
-try:
-    agent.training_data = load_cache(
-            data_path(f"training_data{agent.sample_data_size}.pkl")
-        )
-    agent.validation_data = load_cache(
-            data_path(f"validation_data{agent.sample_data_size}.pkl")
-        )
-    agent.testing_data = load_cache(
-            data_path(f"testing_data{agent.sample_data_size}.pkl")
-        )
-except FileNotFoundError:
-        agent.split_and_save_data(agent.sample)
+    if not agent.model_loaded:
+        agent.model.n_jobs = -1 # Multithread for fitting
+        agent.train_model()
+        # agent.plot_learning_curve()
 
-if not agent.model_loaded:
-    agent.model.n_jobs = -1 # Multithread for fitting
-    agent.train_model()
-    # agent.plot_learning_curve()
-
-agent.model.n_jobs = 1 # Single thread for inference
-agent.model.verbose = 0 # No verbose output
+    agent.model.n_jobs = 1 # Single thread for inference
+    agent.model.verbose = 0 # No verbose output
 
 agent.test_dictionary = test_dictionary
 agent.train_dictionary = train_dictionary
