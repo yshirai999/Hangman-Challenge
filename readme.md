@@ -2,7 +2,7 @@
 
 This repository contains multiple agents, training and evaluation pipelines, and a hybrid architecture combining affix-based heuristics with machine learning to play the hangman gain on a dictionary of 50000 words (test set). The agents are trained on a similar by disjoint dictionary of 200000 words (training set).
 
-Note: this challenge was originally inspired by a recruiting process and has been anonymized for general sharing.
+Note: this challenge was developed in one week as part of a recruiting process and has been anonymized for general sharing.
 
 ## Final Result
 
