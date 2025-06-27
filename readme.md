@@ -297,4 +297,4 @@ A letter could then be selected based on frequency across these candidates
 
 ## Final Thoughts
 
-This project was a great opportunity to combine linguistic intuition with machine learning and symbolic heuristics. It reflects both analytical reasoning and creative exploration under time constraints. I'm grateful to the Trexquant team for the challenge.
+This project was a great opportunity to combine linguistic intuition with machine learning and symbolic heuristics. It reflects both analytical reasoning and creative exploration under time constraints.
