@@ -4,6 +4,14 @@ This repository contains multiple agents, training and evaluation pipelines, and
 
 Note: this repo was developed in one week as part of a recruiting process and has been anonymized for general sharing.
 
+# About the Author
+Yoshihiro Shirai is a Pearson Fellow at the University of Washington with expertise in applied mathematics, machine learning, and economics.
+
+🔗 LinkedIn
+📖 Google Scholar
+💻 GitHub
+🌐 Personal Website
+
 ## Final Result
 
 The agent "Subpattern_Greedy" achieved a 27.5% win rate on the test set. The final strategy integrated affix-aware subpattern matching, fallback logical reasoning, with affixes estimated on the training dictionary. Despite operating under constrained black-box conditions, the approach demonstrated significant gains over baseline frequency methods and exploratory agents.
