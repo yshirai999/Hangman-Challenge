@@ -5,12 +5,14 @@ This repository contains multiple agents, training and evaluation pipelines, and
 Note: this repo was developed in one week as part of a recruiting process and has been anonymized for general sharing.
 
 ## About the Author
-Yoshihiro Shirai is a Pearson Fellow at the University of Washington with expertise in applied mathematics, machine learning, and economics.
 
-🔗 LinkedIn
-📖 Google Scholar
-💻 GitHub
-🌐 Personal Website
+**Yoshihiro Shirai** is a Pearson Fellow at the University of Washington with expertise in applied mathematics, quantitative modeling, and macro strategy research.
+
+- 🔗 [LinkedIn](https://www.linkedin.com/in/yoshihiro-shirai/)
+- 📖 [Google Scholar](https://scholar.google.com/citations?user=...)
+- 💻 [GitHub](https://github.com/yshirai999)
+- 🌐 [Personal Website](https://www.yoshihiroshirai.com)
+
 
 ## Final Result
 
